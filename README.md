@@ -22,7 +22,7 @@ The Result Calculator is a simple web application designed to help users calcula
    ```bash
    git clone https://github.com/Owais-Zakir/Result-Calculator.git
 
-   Open index.html in your web browser.
+ Open index.html in your web browser.
 ## Usage
 1. Enter Your Marks:
 
@@ -30,9 +30,9 @@ The Result Calculator is a simple web application designed to help users calcula
 
 2. Calculate:
 - Click the Calculate button. The application will display:
--- Your entered marks.
--- Your percentage.
--- A corresponding grade along with a congratulatory message or advice based on your score.
+  - Your entered marks.
+  - Your percentage.
+  - A corresponding grade along with a congratulatory message or advice based on your score.
   
 3. Feedback:
 If the entered marks are invalid (not between 0 and 550), a message will prompt you to enter a valid value.
