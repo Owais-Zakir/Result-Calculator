@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5 ease-in;
+  -webkit-transition: all 0.5 ease-in;
+  -moz-transition: all 0.5 ease-in;
+  -ms-transition: all 0.5 ease-in;
+  -o-transition: all 0.5 ease-in;
+}
+/* Base Styles */
+body {
+  width: 100dvw;
+  height: 100dvh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #121212;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  -moz-transition: background-color 0.3s ease, color 0.3s ease;
+  -ms-transition: background-color 0.3s ease, color 0.3s ease;
+  -o-transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Container */
+div {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 2rem;
+  background-color: #2a2a2a;
+  border-radius: 60px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transform: scale(0.95);
+  animation: scaleIn 0.5s forwards;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+}
+
+/* Scale-in Animation */
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Headings */
+h1,
+h2 {
+  color: #ffffff; /* Soft White */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+.head__1{
+  padding-top: 1rem;
+  padding-bottom: .1rem;
+  font-size: 2rem;
+}
+/* Labels */
+/* label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #e0e0e0; 
+}*/
+
+/* Input Fields */
+input {
+  width: calc(100% - 30px);
+  background: linear-gradient(145deg, #1e1e1e, #272727);
+  color: #e0e0e0;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+input:hover {
+    background: linear-gradient(    145deg,    #2a2a2a,    #323232  );
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+}
+
+input:focus {
+  outline: none; /* Remove default outline */
+}
+
+input:focus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  border: 2px solid #3498db; /* Vibrant Blue border */
+  opacity: 1; /* Show border on focus */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Buttons */
+button {
+    background-color:  rgb(78, 182, 66);
+    color: #e0e0e0;
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    filter: brightness(.9);
+    -webkit-filter: brightness(.9);
+}
+
+button:hover {
+    background-color:  rgb(77, 199, 63);
+    color: #ffffff;
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    filter: brightness(1);
+    -webkit-filter: brightness(1);
+}
+
+/* Result Text */
+.result-text {
+  color: #FFF7F7    ;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.result-text:hover {
+  color: #E9EFEC; /* Change color on hover */
+  text-shadow: 0 0 10px #C4DAD2; /* Glow effect on hover */
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++ Utilities ++++++++++++++++++ */
+.effect{
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.effect:hover {
+  color: #E9EFEC; /* Change color on hover */
+  text-shadow: 0 0 10px #C4DAD2; /* Glow effect on hover */
+}
+.p-1 {
+  padding-top: 0.5rem;
+  padding: 1rem;
+}
+.p-2 {
+  padding-top: 1rem;
+  padding: 1.5rem;
+} 
+.f-v{
+  color: rgb(77, 199, 63);
+}
