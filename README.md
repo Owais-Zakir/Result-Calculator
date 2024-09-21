@@ -35,7 +35,7 @@ The Result Calculator is a simple web application designed to help users calcula
   - A corresponding grade along with a congratulatory message or advice based on your score.
   
 3. Feedback:
-If the entered marks are invalid (not between 0 and 550), a message will prompt you to enter a valid value.
+- If the entered marks are invalid (not between 0 and 550), a message will prompt you to enter a valid value.
 
 ## Demo
 ## Contributing
