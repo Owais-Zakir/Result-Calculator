@@ -1,5 +1,5 @@
 function calcM (){
-    const totalM = 550;
+    const totalM = document.getElementById("totalMarks").value;
     let userM = document.querySelector("#userM").value;
     const getM = (userM / totalM ) * 100;
     let congUnfor = document.querySelector("#userget");

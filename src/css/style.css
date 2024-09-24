@@ -41,6 +41,10 @@ div {
   -moz-border-radius: 60px;
   -ms-border-radius: 60px;
   -o-border-radius: 60px;
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
 }
 
 /* Scale-in Animation */
@@ -48,7 +52,11 @@ div {
   0% {
     opacity: 0;
     transform: scale(0.95);
-  }
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
   100% {
     opacity: 1;
     transform: scale(1);
@@ -60,6 +68,9 @@ h1,
 h2 {
   color: #ffffff; /* Soft White */
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+.mb-1{
+  margin-bottom: 1rem;
 }
 .head__1{
   padding-top: 1rem;
@@ -112,9 +123,13 @@ input:focus::before {
   right: 0;
   bottom: 0;
   border-radius: 10px;
-  border: 2px solid #3498db; /* Vibrant Blue border */
-  opacity: 1; /* Show border on focus */
-  transition: all 0.3s ease; /* Smooth transition */
+  border: 2px solid #3498db;
+  opacity: 1;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
 /* Buttons */
