@@ -8,7 +8,7 @@ function calcM (){
     if(getM <= 100 && getM >= 0){
         displayM.innerHTML = `Your Percentage Is : ${getM}%`;
     }else{
-        displayM.innerHTML ="0"
+        displayM.innerHTML =""
     }
 
     if (getM > 0 && getM < 50 ) {
