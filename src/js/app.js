@@ -6,7 +6,7 @@ function calcM (){
     let userget = document.querySelector("#displayGrad");
     let displayM = document.getElementById("userMarksDisplay");
     if(getM <= 100 && getM >= 0){
-        displayM.innerHTML = userM;
+        displayM.innerHTML = `Your Percentage Is : ${getM}%`;
     }else{
         displayM.innerHTML ="0"
     }
